@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <%= cl_image_tag photos[0].key, height: 300, width: 400, crop: :fill, class: "avatar-chef" %>
+    <h3><%= @chef.full_name %></h3>
+    <h4><%= @chef.speciality %></h4>
+    <p><%= @chef.experience %></p>
+  </div>
+  <div>
+    <div>
+      <%= cl_image_tag photos[1].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
+    </div>
+    <div>
+      <%= cl_image_tag photos[2].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
+    </div>
+    <div>
+      <%= cl_image_tag photos[3].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
+    </div>
+  </div>
+</div>

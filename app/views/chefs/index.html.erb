@@ -1,0 +1,13 @@
+<h2>Chefs' collection</h2>
+<h4>Choose a chef of your best culinary experience</h4>
+<div>
+  <% @chefs.each do |chef| %>
+  <div>
+     <%= cl_image_tag photos[0].key, height: 300, width: 400, crop: :fill %>
+    <div>
+      <h4><%= chef.full_name %></h4>
+      <h6><%= chef.speciality %></h6>
+    </div>
+  </div>
+  <% end %>
+</div>
