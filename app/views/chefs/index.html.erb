@@ -1,6 +1,6 @@
 <h2>Chefs' collection</h2>
 <h4>Choose a chef of your best culinary experience</h4>
-<div>
+<div class="cards">
   <% @chefs.each do |chef| %>
   <div>
      <%= cl_image_tag photos[0].key, height: 300, width: 400, crop: :fill %>
