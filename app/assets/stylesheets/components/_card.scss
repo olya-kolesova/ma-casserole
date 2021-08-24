@@ -1,5 +1,54 @@
 
 
-img {
+.card-img-top {
   width: 150px;
+  border-radius: 15px;
+  width:100%;
+  background-color: #F6F6F2;
+}
+
+.card{
+  border-radius:15px;
+  background-color:#F6F6F2;
+  border: none;
+}
+
+.card-body {
+  background-color: #F6F6F2;
+  display: flex;
+  align-content: flex-start
+}
+
+.card-body p {
+  margin:0;
+  height:80px;
+}
+
+h4.card-title{
+  font-family: StelvioGrotesk;
+  font-size: 2.2 rem;
+  width: 100%;
+  color:#163F41;
+}
+h5.card-text {
+  font-family: adobe-ming-std;
+  font-size: 1.2 rem;
+  color:#163F41;
+  font-weight: 300;
+}
+
+.card-img-top {
+  height: 5rem;
+  background-position: center;
+  background-size: cover ;
+  height: 380px;
+
+}
+
+.badge-light {
+padding: 12px;
+margin-top:26px;
+margin-left:204px;
+color:#103A3A;
+background-color: #FFFABD;
 }
