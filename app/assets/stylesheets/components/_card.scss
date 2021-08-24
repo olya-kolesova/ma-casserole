@@ -1,5 +1,31 @@
 
 
-img {
+.card-img-top {
   width: 150px;
+  border-radius: 15px;
+  width:100%;
+  background-color: #F6F6F2;
+}
+
+.card{
+  border-radius:15px;
+  background-color:#F6F6F2;
+  border: none;
+}
+
+.card-body {
+  background-color: #F6F6F2;
+}
+
+h4.card-title{
+  font-family: StelvioGrotesk;
+  font-size: 2.2 rem;
+  width: 100%;
+  color:#163F41;
+}
+h5.card-text {
+  font-family: adobe-ming-std;
+  font-size: 1.2 rem;
+  color:#163F41;
+  font-weight: 300;
 }
