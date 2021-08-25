@@ -2,29 +2,17 @@
 <h4>Choose a chef of your best culinary experience</h4>
 <div class="cards_list_index">
   <% @chefs.each do |chef| %>
-     <%# <%= cl_image_tag photos[0].key, height: 300, width: 400, crop: :fill %>
-    <%# <div>
-      <%# <h4><%= chef.full_name %>
-      <%# <h6><%= chef.speciality</h6> %>
-    <%# </div> %>
-  <%# </div> %>
-
     <div class=container>
-    <h3></h3>
-    <div class="card" style="width: 18rem;">
-      <div class="card-img-top" style="background-image: url('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3025&q=80');
-    ">
-        <span class="badge badge-light">cuisine</span>
-      </div>
-      <div class="card-body">
-        <h4 class="card-title"><%= chef.full_name %></h4>
-        <p class="card-price">Price</p>
-      </div>
+      <div class="card" style="width: 18rem;">
+        <% if chef.photos.present? %>
+        <div class="card-img-top" style="background-image: url(cl_image_path chef.photos[0].key)">
+          <span class="badge badge-light">cuisine</span>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"><%= chef.full_name %></h4>
+          <p class="card-price">Price</p>
+        </div>
       </div>
     </div>
-
-
   <% end %>
-
-
 </div>
