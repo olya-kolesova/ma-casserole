@@ -1,19 +1,27 @@
 <div>
   <div>
-    <%= cl_image_tag @chef.photos[0].key, height: 300, width: 400, crop: :fill, class: "avatar-chef" %>
-    <h3><%= @chef.full_name %></h3>
-    <h4><%= @chef.speciality %></h4>
-    <p><%= @chef.experience %></p>
+    <% if @chef.photos[0].present? %>
+      <%= cl_image_tag @chef.photos[0].key, height: 300, width: 400, crop: :fill, class: "avatar-chef" %>
+      <h3><%= @chef.full_name %></h3>
+      <h4><%= @chef.speciality %></h4>
+      <p><%= @chef.experience %></p>
+    <% end %>
   </div>
   <div>
-    <div>
-      <%= cl_image_tag @chef.photos[1].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
-    </div>
-    <div>
-      <%= cl_image_tag @chef.photos[2].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
-    </div>
-    <div>
-      <%= cl_image_tag @chef.photos[3].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
-    </div> %>
-  </div>
+    <% if @chef.photos[1].present? %>
+      <div>
+        <%= cl_image_tag @chef.photos[1].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
+      </div>
+    <% end %>
+    <% if @chef.photos[2].present? %>
+      <div>
+        <%= cl_image_tag @chef.photos[2].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
+      </div>
+      <% end %>
+    <% if @chef.photos[3].present? %>
+      <div>
+        <%= cl_image_tag @chef.photos[3].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
+      </div>
+    <% end %>
+</div>
 </div>
