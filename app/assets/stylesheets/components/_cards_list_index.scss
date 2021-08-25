@@ -1,0 +1,8 @@
+.cards_list_index {
+  margin: auto;
+  text-align: center;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
