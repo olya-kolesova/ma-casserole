@@ -1,7 +1,7 @@
 <div class='container'>
   <h4>NEW BOOKING REQUEST</h4>
   <div class='container'>
-    <%= simple_form_for(@booking) do |f| %>
+    <%= simple_form_for [@chef, @booking] do |f| %>
 
       <%# CHEF_NAME TO AUTOPOPULATE IN ANOTHER FIELD %>
 
@@ -11,4 +11,3 @@
     <% end %>
   </div>
 </div>
-
