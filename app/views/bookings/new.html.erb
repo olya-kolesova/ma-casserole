@@ -1,9 +1,10 @@
   <h4>NEW BOOKING REQUEST</h4>
   <div class='container'>
-    <%= simple_form_for(@booking) do |f| %>
+    <%= simple_form_for [@chef, @booking] do |f| %>
+
+      <%# CHEF_NAME TO AUTOPOPULATE IN ANOTHER FIELD %>
       <%= f.input :start_date, placeholder: 'request start date' %>
       <%= f.input :end_date, placeholder: 'request end date' %>
       <%= f.submit class: 'btn btn-success' %>
     <% end %>
   </div>
-
