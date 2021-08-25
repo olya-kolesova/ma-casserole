@@ -1,6 +1,5 @@
    <%= link_to 'HOME', root_path %><br>
 
-  <h4> ### ALL bookings ### </h4><br>
+  <h2> ### ALL bookings ### </h2><br>
     <% @bookings.each do |booking| %>
-    <h5><%= booking.id %>. <%= link_to booking.title, booking_path(booking) %>: <%= booking.details %></h5>
     <% end %>

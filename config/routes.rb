@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   resources :chefs, only: [:index, :show, :new, :create] do
     resources  :bookings, only: [:index, :show, :new, :create, :edit, :update]
   end  
-
 end
