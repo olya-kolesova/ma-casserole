@@ -3,7 +3,9 @@
 <div class="cards">
   <% @chefs.each do |chef| %>
   <div>
-     <%# <%= cl_image_tag photos[0].key, height: 300, width: 400, crop: :fill %> %>
+    <% if chef.photos.present? %>
+     <%= cl_image_tag chef.photos[0].key, height: 300, width: 400, crop: :fill %>
+    <% end %>
     <div>
       <h4><%= chef.full_name %></h4>
       <h6><%= chef.speciality %></h6>
