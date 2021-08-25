@@ -1,6 +1,7 @@
 .background_img {
   display:flex;
   align-items: flex-end;
+  justify-content: space-around;
   width:100vw;
   height:770px;
   background-size:cover;
@@ -24,4 +25,28 @@ h2.text-home {
 
 .text {
   margin-left: 32px;
+}
+
+
+.inner-text-chefs {
+  font-family:StelvioGrotesk;
+  font-size:30px;
+  font-weight:400;
+  margin-bottom: 55px;
+  margin-left: 38px;
+  color:#FFFABD;
+}
+
+a {
+   font-family:StelvioGrotesk;
+  font-size:30px;
+  font-weight:400;
+  margin-bottom: 55px;
+  margin-left: 205px;
+  color:#FFFABD;
+}
+
+a:hover {
+color:#F6F6F0;
+text-decoration: none;
 }
