@@ -30,10 +30,10 @@ file2 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897
 file3 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897785/french2_anyghd.jpg')
 file4 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897784/french3_ndvsv8.jpg')
 
-chef_french.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/png')
-chef_french.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/png')
-chef_french.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/png')
-chef_french.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/png')
+chef_french.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/jpg')
+chef_french.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/jpg')
+chef_french.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/jpg')
+chef_french.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/jpg')
 
 chef_french.save!
 
@@ -50,10 +50,10 @@ file3 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897
 file4 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897784/japanese3_uil5k3.jpg')
 
 
-chef_japanese.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/png')
-chef_japanese.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/png')
-chef_japanese.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/png')
-chef_japanese.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/png')
+chef_japanese.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/jpg')
+chef_japanese.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/jpg')
+chef_japanese.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/jpg')
+chef_japanese.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/jpg')
 
 chef_japanese.save!
 
@@ -70,10 +70,10 @@ file2 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897
 file3 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897787/chinese3_lpkdwi.jpg')
 file4 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897787/chinese4_hkhxsr.jpg')
 
-chef_chinese.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/png')
-chef_chinese.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/png')
-chef_chinese.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/png')
-chef_chinese.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/png')
+chef_chinese.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/jpg')
+chef_chinese.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/jpg')
+chef_chinese.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/jpg')
+chef_chinese.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/jpg')
 
 chef_chinese.save!
 
@@ -90,10 +90,10 @@ file2 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897
 file3 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897786/korean3_vwgf81.jpg')
 file4 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897786/korean4_flhstr.jpg')
 
-chef_korean.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/png')
-chef_korean.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/png')
-chef_korean.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/png')
-chef_korean.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/png')
+chef_korean.photos.attach(io: file1, filename: '1.jpg', content_type: 'image/jpg')
+chef_korean.photos.attach(io: file2, filename: '2.jpg', content_type: 'image/jpg')
+chef_korean.photos.attach(io: file3, filename: '3.jpg', content_type: 'image/jpg')
+chef_korean.photos.attach(io: file4, filename: '4.jpg', content_type: 'image/jpg')
 
 chef_korean.save!
 
