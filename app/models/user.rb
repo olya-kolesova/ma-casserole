@@ -1,7 +1,6 @@
 class User < ApplicationRecord
   has_many :chefs, dependent: :destroy
-  has_many :bookings, dependent: :destroy
-  has_many :chefs, through: :bookings
+  has_many :bookings
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
