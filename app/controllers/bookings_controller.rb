@@ -13,12 +13,18 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @chef = Chef.find(params[:chef_id])
     @booking = Booking.new(booking_params)
-    @booking.chef = @chef
     @booking.user = current_user
-    @booking.save!
-    redirect_to :root
+    @booking.chef = Chef.find(params[:chef_id])
+    # @booking.chef = @chef
+    if @booking.save!
+      # redirect_to chef_bookings_path
+       redirect_to :root
+    else
+      @chef = Chef.find(params[:chef_id])
+    # redirect_to :root
+    render :new
+    end
   end
 
   # def edit; end
@@ -26,9 +32,9 @@ class BookingsController < ApplicationController
   # def update
   #   @chef.find(params[:id])
   #   @booking.update(booking_params)
-  #   booking.chef = @chefbooking.user = current_user
+  #   @booking.chef = @chef
+  #   @booking.user = current_user
   #   redirect_to booking_path(@booking)
-  #   redirect_to : root
   # end
 
     private
@@ -38,6 +44,6 @@ class BookingsController < ApplicationController
   end
 
   def dry_id_booking
-    @task = Booking.find(params[:id])
+    @booking = Booking.find(params[:id])
   end
 end
