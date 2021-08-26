@@ -1,3 +1,4 @@
+
 <div class=container>
   <div>
     <div class="text-center">
@@ -25,5 +26,37 @@
           <% end %>
       <% end %>
     </div>
+=======
+<div class=container1>
+<div class="container2">
+  <h2>Chefs' collection</h2>
+  <h4>Choose a chef of your best culinary experience</h4>
+  </div>
+  <div>
+    <%= form_tag chefs_path, method: :get, class: 'my-5 d-flex' do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a chef of your favourite taste"
+      %>
+      <%= submit_tag "Search", class: "btn btn-orange" %>
+    <% end %>
+  </div>
+  <div class="cards_list_index">
+    <% @chefs.each do |chef| %>
+      <%= link_to chef_path(chef) do %>
+        <div class="card" style="width: 18rem;">
+          <% if chef.photos.present? %>
+          <div class="card-img-top" style="background-image: url('<%= cl_image_path chef.photos[0].key %>')">
+            <span class="badge badge-light"><%= chef.speciality %></span>
+          </div>
+          <% end %>
+          <div class="card-body">
+            <h4 class="card-title"><%= chef.full_name %></h4>
+            <p class="card-price"><%= chef.price %></p>
+          </div>
+        </div>
+        <% end %>
+    <% end %>
   </div>
 </div>
