@@ -7,6 +7,12 @@ class ChefsController < ApplicationController
     else
       @chefs = Chef.all
     end
+    @markers = @chefs.geocoded.map do |chef|
+      {
+        lat: chef.latitude,
+        lng: chef.longitude
+      }
+    end
   end
 
   def show
