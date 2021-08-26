@@ -9,19 +9,19 @@
         <p><%= @chef.experience %></p>
       <% end %>
     </div>
-    <div>
+    <div class="d-flex" >
       <% if @chef.photos[1].present? %>
-        <div>
+        <div class="pr-2">
           <%= cl_image_tag @chef.photos[1].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
         </div>
       <% end %>
       <% if @chef.photos[2].present? %>
-        <div>
+        <div class="pr-2">
           <%= cl_image_tag @chef.photos[2].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
         </div>
         <% end %>
       <% if @chef.photos[3].present? %>
-        <div>
+        <div class="pr-2">
           <%= cl_image_tag @chef.photos[3].key, height: 300, width: 400, crop: :fill, class: "card-food" %>
         </div>
       <% end %>
