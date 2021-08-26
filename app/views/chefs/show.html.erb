@@ -4,8 +4,8 @@
     <div>
       <% if @chef.photos[0].present? %>
         <%= cl_image_tag @chef.photos[0].key, height: 300, width: 400, crop: :fill, class: "avatar-chef" %>
-        <h3><%= @chef.full_name %></h3>
-        <h4><%= @chef.speciality %></h4>
+        <h2><%= @chef.full_name %></h2>
+        <h3><%= @chef.speciality %></h3>
         <p><%= @chef.experience %></p>
       <% end %>
     </div>
