@@ -161,7 +161,7 @@ chef_eastern_european = Chef.create!(
   experience: "Armed with the best classical training you could ask for and a repertoire of eastern European recipes most other chefs don’t dabble with makes him one of the UK’s most exciting chefs. He cooks small plates using a wood-fired oven and live fire cooking for just five people at a time, using ingredients exclusively from local farmers with plenty of homemade charcuterie, smoked fish, butter, bread, liqueurs and ferments.",
   user: user6,
   price: 42.3,
-  address: "206 High Street, London E6 2JA"
+  address: "29 Westferry Circus, London E14 8RR"
 )
 
 file1 = URI.open('https://res.cloudinary.com/olya-kolesova/image/upload/v1629897927/la-casserole/easteu0_i3rurv.jpg')
