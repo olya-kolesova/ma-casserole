@@ -3,6 +3,16 @@
   <h2>Chefs' collection</h2>
   <h4>Choose a chef of your best culinary experience</h4>
   </div>
+  <div>
+    <%= form_tag chefs_path, method: :get, class: 'my-5 d-flex' do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a chef of your favourite taste"
+      %>
+      <%= submit_tag "Search", class: "btn btn-orange" %>
+    <% end %>
+  </div>
   <div class="cards_list_index">
     <% @chefs.each do |chef| %>
       <%= link_to chef_path(chef) do %>
