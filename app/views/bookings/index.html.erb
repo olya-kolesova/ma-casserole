@@ -1,15 +1,9 @@
-<div class='container'>
-
-
+<div class='container justify-content-center'>
     <h2> My Bookings </h2><br>
-      <div class="cards_list_index">
     <% @bookings.each do |booking| %>
-    <div class=container>
-        <p><%= booking.chef.user.first_name %></p>
-        <p><%= booking.chef.speciality %></p>
-        <p><%= booking.start_date %></p>
-        <p><%= booking.end_date %></p>
-      <% end %>
-    </div>
-  </div>
+      <div class="card booking">  
+        <p><strong><%= booking.chef.user.first_name %></strong> : <%= booking.chef.speciality %></p>
+        <p><%= booking.start_date %> - <%= booking.end_date %></p>
+      </div>
+    <% end %>
 </div>
