@@ -9,7 +9,7 @@
 form {
 border-width: thin;
 padding: 20px;
-padding-top: 6px;
+padding-top: 26px;
 padding-bottom: 19px;
 box-shadow: 0 2px 14px;
 }
@@ -51,4 +51,15 @@ h2 {
 .btn-yellow:hover {
 background-color: #F5B799;
 text-decoration: none;
+
+
+label.date.required {
+  font-family: BrandonBold,"Courier New",Courier,monospace;
+  color: #103A3A;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 15px;
 }
