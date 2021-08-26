@@ -3,19 +3,19 @@
   top: 0px;
   background: #F6F6F2;
   max-height: 80px;
+  z-index: 9999;
 }
 
 .logo {
  height: 50px;
  width: 50px;
- position: sticky;
 }
 
 ul {
   padding: 10px 20px;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .nav-link {
@@ -23,5 +23,20 @@ ul {
 }
 
 .nav-link:hover {
-  color: white;
+  color: rgb(136, 128, 128);
+}
+
+.navbar-toggler {
+  font-size: 30px;
+  font-family: StelvioGrotesk;
+  padding: 0px;
+}
+
+.nav-drop {
+  font-size: 30px;
+  font-family: StelvioGrotesk;
+}
+
+.drop-down {
+  background: #F6F6F2;
 }

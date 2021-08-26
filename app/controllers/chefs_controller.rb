@@ -2,7 +2,11 @@ class ChefsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @chefs = Chef.all
+    if params[:query].present?
+      @chefs = Chef.search_by_speciality_and_experience(params[:query])
+    else
+      @chefs = Chef.all
+    end
   end
 
   def show
