@@ -1,7 +1,7 @@
 class Chef < ApplicationRecord
   belongs_to :user
   has_many :bookings
-  validates :speciality, :photos, presence: true
+  validates :speciality, presence: true
   has_many_attached :photos
 
   def full_name
