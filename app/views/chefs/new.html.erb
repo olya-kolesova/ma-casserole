@@ -1,6 +1,9 @@
-<%= simple_form_for(@chef) do |f| %>
-  <%= f.input :speciality %>
-  <%= f.input :experience %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <%= simple_form_for(@chef) do |f| %>
+    <%= f.input :speciality %>
+    <%= f.input :experience, class: "experience-input"%>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <%= f.submit "create", class: 'btn btn-orange' %>
+  <% end %>
+
+</div>
