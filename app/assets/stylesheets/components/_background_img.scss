@@ -23,6 +23,7 @@ h2.text-home {
 
 .text {
   margin-left: 32px;
+  padding-bottom: 58px;
 }
 
 
@@ -43,4 +44,8 @@ a {
 a:hover {
 color:#F6F6F0;
 text-decoration: none;
+}
+
+.d-flex.justify-content-between.align-items-center {
+    padding-bottom: 61px;
 }
