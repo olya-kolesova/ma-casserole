@@ -7,4 +7,11 @@ class Chef < ApplicationRecord
   def full_name
     "#{user.first_name.capitalize} #{user.last_name.capitalize}"
   end
+
+  include PgSearch::Model
+  pg_search_scope :search_by_speciality_and_experience,
+    against: [ :speciality, :experience ],
+    using: {
+      tsearch: { prefix: true } # <-- now `superman batm` will return something!
+  }
 end
