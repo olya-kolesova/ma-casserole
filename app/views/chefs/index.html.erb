@@ -6,7 +6,7 @@
       <div class="card" style="width: 18rem;">
         <% if chef.photos.present? %>
         <div class="card-img-top" style="background-image: url('<%= cl_image_path chef.photos[0].key %>')">
-          <span class="badge badge-light">cuisine</span>
+          <span class="badge badge-light"><%= chef.speciality %></span>
         </div>
         <% end %>
         <div class="card-body">
