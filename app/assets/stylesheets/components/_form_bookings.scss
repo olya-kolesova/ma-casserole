@@ -7,9 +7,11 @@
 }
 
 form {
-border: 20px solid#103A3A;;
 border-width: thin;
-padding: 6px;
+padding: 20px;
+padding-top: 6px;
+padding-bottom: 19px;
+box-shadow: 0 2px 14px;
 }
 
 input.btn.btn-yellow {
@@ -29,4 +31,19 @@ label.date.optional {
 
 select {
 font-family:BrandonBold;
+}
+
+h3 {
+    font-family: StelvioGrotes;
+    color: #103A3A;
+    padding-top: 0px;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+h2 {
+  font-family: BrandonBold,"Courier New",Courier,monospace;
+    color: #103A3A;
+    padding-top: 18px;
+    font-size: 25px;
 }
