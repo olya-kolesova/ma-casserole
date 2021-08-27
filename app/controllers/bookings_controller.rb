@@ -2,7 +2,7 @@ class BookingsController < ApplicationController
   before_action :dry_id_booking, only: [:show, :edit, :update, :destroy]
 
   def index
-    @bookings = Booking.all
+    @bookings = Booking.all.order(created_at: :DESC)
   end
 
   def show; end
@@ -26,7 +26,7 @@ class BookingsController < ApplicationController
       render 'chefs/show'
     end
   end
-  
+
   def destroy
     @booking.destroy
     redirect_to bookings_path
