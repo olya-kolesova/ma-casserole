@@ -9,6 +9,16 @@
 .logo {
  height: 50px;
  width: 50px;
+ top: 50%;
+ -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+  margin-left: 80px;
+}
+
+.btn-height{
+ top: 50%;
+ -ms-transform: translateY(5%);
+ transform: translateY(5%);
 }
 
 ul {
@@ -16,24 +26,41 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
+
+}
+
+li {
+  height: 60px;
+  top: 50%;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
 }
 
 .nav-link {
   color: black;
+  height: 60px;
+  font-size: 40px;
+  // margin-left: 80px;
 }
 
 .nav-link:hover {
   color: rgb(136, 128, 128);
+
 }
 
 .navbar-toggler {
-  font-size: 30px;
+  font-size: 40px;
   font-family: StelvioGrotesk;
-  padding: 0px;
+  // padding: 0px 0px 5px 0px;
+  // margin-left: 80px;
+}
+
+.navbar-toggler:hover {
+  color: rgb(136, 128, 128);
 }
 
 .nav-drop {
-  font-size: 30px;
+  font-size: 40px;
   font-family: StelvioGrotesk;
 }
 
