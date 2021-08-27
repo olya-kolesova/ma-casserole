@@ -43,6 +43,11 @@ class ChefsController < ApplicationController
   def update
     @chef = Chef.find(params[:id])
     @chef.update(chef_params)
+    if @chef.save
+      redirect_to chef_path(@chef)
+    else
+      render 'edit'
+    end
   end
 
   def destroy
