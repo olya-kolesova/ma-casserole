@@ -2,15 +2,14 @@
     <h2> My Bookings </h2><br>
     <% if @bookings.blank? %>
       <div class="card booking">
-        <p> You currently have no bookings. Why not browse our <%= link_to 'chefs', chefs_path %> and search for your favourite cuisine.</p>
+        <p> You currently have no bookings. Why not browse our <%= link_to 'chefs', chefs_path, class: 'btn btn-yellow' %> and search for your favourite cuisine.</p>
       </div>
-    <% else %> 
+    <% else %>
       <% @bookings.each do |booking| %>
-        <div class="card booking">  
+        <div class="card booking">
           <p><strong><%= booking.chef.user.first_name %></strong> : <%= booking.chef.speciality %></p>
           <p><%= booking.start_date %> - <%= booking.end_date %></p>
       <% end %>
         </div>
     <% end %>
 </div>
-
