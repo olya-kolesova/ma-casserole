@@ -176,4 +176,12 @@ chef_eastern_european.photos.attach(io: file4, filename: '4.jpg', content_type: 
 
 chef_eastern_european.save!
 
+
+user7 = User.create!(
+  email: "katya@gmail.com",
+  password: "123456",
+  first_name: "Katya",
+  last_name: "Ueno"
+)
+
 puts "Finishing seeding!"
