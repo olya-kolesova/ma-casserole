@@ -36,6 +36,21 @@ class ChefsController < ApplicationController
     end
   end
 
+  def edit
+    @chef = Chef.find(params[:id])
+  end
+
+  def update
+    @chef = Chef.find(params[:id])
+    @chef.update(chef_params)
+  end
+
+  def destroy
+    @chef = Chef.find(params[:id])
+    @chef.destroy
+    redirect_to chefs_path
+  end
+
   private
 
   def chef_params
