@@ -8,9 +8,10 @@
       <% @bookings.each do |booking| %>
         <div class="card booking">  
           <p><strong><%= booking.chef.user.first_name %></strong> : <%= booking.chef.speciality %></p>
-          <p><%= booking.start_date %> - <%= booking.end_date %></p>
-      <% end %>
+          <p>Date: <%= booking.start_date %> - <%= booking.end_date %></p>
+          <p>Price: <strong>£<%= booking.chef.price %></strong></p>
+          <%= link_to 'DELETE BOOKING', booking_path(booking), class: 'btn btn-sm btn-orange', method: :delete, data: { confirm: '🚨 ARE YOU SURE YOU WANT TO DELETE THIS BOOKING 🚨' } %></p>
         </div>
+      <% end %>
     <% end %>
 </div>
-
