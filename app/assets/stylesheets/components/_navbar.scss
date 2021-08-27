@@ -3,25 +3,61 @@
   top: 0px;
   background: #F6F6F2;
   max-height: 80px;
+  z-index: 9999;
 }
 
 .logo {
  height: 50px;
  width: 50px;
- position: sticky;
+ top: 50%;
+ -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+  margin-left: 30px;
 }
 
 ul {
   padding: 10px 20px;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+
+}
+
+li {
+  height: 60px;
+  top: 50%;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
 }
 
 .nav-link {
   color: black;
+  height: 60px;
+  font-size: 40px;
+  // margin-left: 80px;
 }
 
 .nav-link:hover {
-  color: white;
+  color: rgb(136, 128, 128);
+
+}
+
+.navbar-toggler {
+  font-size: 40px;
+  font-family: StelvioGrotesk;
+  // padding: 0px 0px 5px 0px;
+  // margin-left: 80px;
+}
+
+.navbar-toggler:hover {
+  color: rgb(136, 128, 128);
+}
+
+.nav-drop {
+  font-size: 40px;
+  font-family: StelvioGrotesk;
+}
+
+.drop-down {
+  background: #F6F6F2;
 }

@@ -2,7 +2,19 @@ class ChefsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @chefs = Chef.all
+    if params[:query].present?
+      @chefs = Chef.search_by_speciality_and_experience(params[:query])
+    else
+      @chefs = Chef.all
+    end
+    @markers = @chefs.geocoded.map do |chef|
+      {
+        lat: chef.latitude,
+        lng: chef.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { chef: chef }),
+        image_url: helpers.asset_url('lemon.png')
+      }
+    end
   end
 
   def show

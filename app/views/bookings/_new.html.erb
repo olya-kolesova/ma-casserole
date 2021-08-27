@@ -4,6 +4,8 @@
       <%# CHEF_NAME TO AUTOPOPULATE IN ANOTHER FIELD %>
       <%= f.input :start_date, placeholder: 'request start date'%>
       <%= f.input :end_date, placeholder: 'request end date'%>
-      <%= f.submit class: 'btn btn-yellow' %>
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <%= f.submit class: 'btn btn-yellow d-block w-100' %>
+      </div>
     <% end %>
   </div>

@@ -1,4 +1,6 @@
-
+.container {
+  width: 1200px
+}
 
 .card-img-top {
   width: 150px;
@@ -15,14 +17,14 @@
 
 .card-body {
   background-color: #F6F6F2;
-  display: flex;
-  align-content: flex-start
+  // display: flex;
+  // align-content: space-between !important;
 }
 
-.card-body p {
-  margin:0;
-  height:80px;
-}
+// .card-body p {
+//   margin:0;
+//   height:80px;
+// }
 
 h4.card-title{
   font-family: StelvioGrotesk;
