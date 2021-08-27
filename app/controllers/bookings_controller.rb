@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :dry_id_booking, only: [:show, :edit, :update]
+  before_action :dry_id_booking, only: [:show, :edit, :update, :destroy]
 
   def index
     @bookings = Booking.all
@@ -26,16 +26,11 @@ class BookingsController < ApplicationController
       render 'chefs/show'
     end
   end
-
-  # def edit; end
-
-  # def update
-  #   @chef.find(params[:id])
-  #   @booking.update(booking_params)
-  #   @booking.chef = @chef
-  #   @booking.user = current_user
-  #   redirect_to booking_path(@booking)
-  # end
+  
+  def destroy
+    @booking.destroy
+    redirect_to bookings_path
+  end
 
     private
 
