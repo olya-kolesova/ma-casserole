@@ -3,16 +3,20 @@
 }
 
 .d-flex.flex-row.justify-content-between.align-items-center {
-    padding-bottom: 18px;
+  padding-bottom: 18px;
+}
+
+#new_booking {
+  width: 480px;
 }
 
 form {
-border-width: thin;
-padding: 20px;
-padding-top: 26px;
-padding-bottom: 19px;
-box-shadow: 0 2px 14px;
-border-radius: 15px;
+  box-shadow: 0 2px 14px;
+  border-width: thin;
+  border-radius: 15px;
+  padding: 20px;
+  padding-top: 26px;
+  padding-bottom: 19px;
 }
 
 h4 {
@@ -22,12 +26,13 @@ h4 {
   padding-bottom: 12px;
 }
 
-label.date.optional {
+label {
   font-family: BrandonBold,"Courier New",Courier,monospace;
 }
 
 select {
-font-family:BrandonBold;
+font-family: BrandonBold,"Courier New",Courier,monospace;
+font-size: 18px;
 }
 
 h3 {

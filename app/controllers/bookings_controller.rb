@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :dry_id_booking, only: [:show, :edit, :update, :destroy]
+  before_action :set_booking, only: [:show, :edit, :update, :destroy]
 
   def index
     @bookings = Booking.all.order(created_at: :DESC)
@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
     # @booking.chef = @chef
     if @booking.save
       # redirect_to chef_bookings_path
-       redirect_to bookings_path
+      redirect_to bookings_path
     else
       @chef = Chef.find(params[:chef_id])
     # redirect_to :root
@@ -35,10 +35,10 @@ class BookingsController < ApplicationController
     private
 
   def booking_params
-    params.require(:booking).permit(:start_date, :end_date)
+    params.require(:booking).permit(:date, :start_hour, :end_hour)
   end
 
-  def dry_id_booking
+  def set_booking
     @booking = Booking.find(params[:id])
   end
 end
